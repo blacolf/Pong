@@ -54,10 +54,12 @@ class Main:
                     score2=score2+1
                     ball.hit_topbottom == False
                     ball.hit_top==False
+                    print('hittop')
                 elif ball.hit_bottom==True:
                     score=score+1
                     ball.hit_topbottom == False
                     ball.hit_bottom==False
+                    print('hitbot')
         # Game Over
             if score==3:
                 self.go_label = self.canvas.create_text(self.w/2,self.h/2,text="P1 WON",font=("Cantarell Ultra-Bold",40), fill="White")
